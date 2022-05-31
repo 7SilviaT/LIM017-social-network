@@ -1,0 +1,677 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-nav: #102166;
+    --color-border: #000000;
+    --color-profile: #FF8C32;
+    --color-background-body: #f7f7f7;
+    --color-text: #06113C;
+    --color-background-center-box: #ffffffe6;
+    ---color-transparent: gray;
+}
+
+/*Mobile First*/
+/*Estilos Home */
+
+.home-container {
+    background-image: linear-gradient(120deg, rgba(64, 58, 64, 0.699) 0%, rgb(39 43 95 / 41%) 100%),
+        url('../pics/City2.jpg');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home {
+    color: #FF8C32;
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    -webkit-text-stroke: 0.1px black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-title {
+    font-size: 45px;
+}
+
+.flower-title {
+    width: 90px;
+    height: 90px;
+    display: none;
+}
+
+.intro-box {
+    background-color: #0B1437;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+    width: 289px;
+    border-radius: 20px;
+    padding: 14px;
+    margin: 60px;
+}
+
+.buttonhomeorange {
+    background-color: #FF8C32;
+    border-radius: 30px;
+    padding: 4px 45px;
+    font-size: 28px;
+    font-family: 'Righteous', cursive;
+}
+
+.buttonhomeorange a {
+    text-decoration: none;
+    color: white;
+}
+
+/*estilos paginas de registro*/
+
+.login-page, .register-page {
+    background-image: url('../pics/fondo-login-register.png');
+    height: 100vh;
+    font-family: 'Righteous', cursive;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-box, .register-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 305px;
+    height: 549px;
+    background-color: var(--color-background-center-box);
+}
+
+.title-login-register {
+    color: #FF8C32;
+    font-size: 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-subtitle {
+    color: var(--color-text);
+    line-height: 2rem;
+}
+
+.icon-container {
+    position: absolute;
+    margin-top: -70px;
+    margin-right: 201px;
+}
+
+.icon-email-container {
+    position: absolute;
+    margin-top: 21px;
+    margin-right: 202px;
+}
+
+.icon-password-container {
+    position: absolute;
+    margin-top: 110px;
+    margin-right: 200px;
+}
+
+.loginpage-icon-email-container {
+    position: absolute;
+    margin-top: -60px;
+    margin-right: 202px;
+}
+
+.loginpage-icon-password-container {
+    position: absolute;
+    margin-top: 25px;
+    margin-right: 200px;
+}
+
+.text-field {
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    width: 238px;
+    height: 38px;
+    padding: 9px 30px;
+    margin: 4px;
+}
+
+.icon-users {
+    width: 26px;
+}
+
+.logo-user {
+    height: 104px;
+    width: 85px;
+    margin-top: 15px;
+}
+
+.logo-google {
+    width: 24px;
+}
+
+/* estilos boton registro*/
+.button-login-orange a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-login-orange {
+    background-color: #FF8C32;
+    border-radius: 0.62rem;
+    border-color: transparent;
+    color: white;
+    height: 39px;
+    align-items: center;
+    display: flex;
+    font-family: 'Righteous', cursive;
+    margin: 6px;
+    width: 12rem;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.error{
+    color:red;
+    font-size:10px;
+}
+.link-nextpage a {
+    text-decoration: underline;
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+.line-google {
+    width: 150px;
+    height: 1px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.line-google span {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-transform: uppercase;
+    background-color: var(--color-background-center-box);
+}
+
+/*Estilos newsfeed */
+
+.header-nav {
+    background-color: var(--color-nav);
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.logo1 {
+    margin-right: 10px;
+    width: 60px;
+    max-width: 100px;
+    overflow: hidden;
+    display: block;
+    border-radius: 100%;
+    border: 0.10rem solid var(--color-border);
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: white;
+    margin-right: 34px;
+    cursor: pointer;
+}
+
+.search-nav {
+    display: none;
+}
+.search-lup{
+    display: none;
+}
+
+.search{
+    display: block;
+    color: white;
+    margin-right: 21px;
+}
+
+.nav-containaer {
+    display: flex;
+
+}
+
+/*contenido publicaciones*/
+
+.direct-access {
+    background-color: var(--color-profile);
+    display: flex;
+    width: 347px;
+    height: 44px;
+    margin: 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+}
+
+.destacado-option,
+.home-option,
+.loultimooption,
+.quizzes-option,
+.recomendaciones-option {
+    background-color: var(--color-background-body);
+    padding: 5px 12px;
+    margin: 0 auto;
+    border-radius: 11px;
+    color: #7C0E0E;
+    cursor: pointer;
+}
+
+.post-container {
+    background-color: #ead7d7a6;
+    width: 338px;
+    height: 150px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 13px;
+}
+
+.post-text {
+    width: 302px;
+    height: 77px;
+    border-radius: 1rem;
+    border: none;
+    padding: 11px;
+}
+.post-comment {
+    margin-top: 1rem;
+    padding: 0.45rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #FF8C32;
+    color: #fff;
+    font-weight: 600;
+    width: 9rem;
+    cursor: pointer;
+}
+/*estilos post*/
+
+.post-publish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    margin: 24px;
+}
+.time-post{
+    display: none;
+}
+.description-post{
+    background-color: #fff;
+    border-radius: 1.5rem;
+    border: none;
+    width: 300px;
+    height: 77px;
+    margin: 5px;
+    padding: 10px;
+}
+.autor-post{
+    text-align: end;
+}
+.hidden {
+    display: none;
+}
+.post-message{
+    visibility: hidden;
+    color:#7C0E0E;
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+
+.btn-delete .btn-edit .hidden{
+    width: 5px;
+    background-color: blue;
+}
+
+/* Responsive for desktop */
+
+@media screen and (min-width: 768px) {
+
+    /*Estilos home*/
+    .home-container {
+        background-image: linear-gradient(120deg, rgba(64, 58, 64, 0.699) 0%, rgb(39 43 95 / 41%) 100%), url(../pics/City2.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .title-home {
+        display: flex;
+        font-size: 72px;
+    }
+
+    .welcome-title {
+        font-size: 80px;
+    }
+
+    .search-lup{
+        display: block;
+        color: white;
+        margin-right: 12px;
+    }
+    
+    .flower-title {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin: 0px 0 0 3px;
+    }
+
+    .intro-box {
+        width: 499px;
+        font-size: 18px;
+    }
+
+    .buttonhomeorange a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*estilos media query paginas de registro*/
+    .login-page,
+    .register-page {
+        height: 100vh;
+        font-family: 'Righteous', cursive;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center-box, .register-page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        width: 350px;
+        height: 600px;
+        background-color: var(--color-background-center-box);
+        color: var(--color-border);
+    }
+
+    .title-login-register {
+        color: #FF8C32;
+        font-family: 'Righteous', cursive;
+        font-size: 40px;
+        -webkit-text-stroke: 0.1px black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-subtitle {
+        color: var(--color-text);
+        line-height: 2rem;
+    }
+
+    .icon-container {
+        position: absolute;
+        margin-top: -75px;
+        margin-right: 224px;
+    }
+
+    .icon-email-container {
+        position: absolute;
+        margin-top: 25px;
+        margin-right: 224px;
+    }
+
+    .icon-password-container {
+        position: absolute;
+        margin-top: 115px;
+        margin-right: 224px;
+    }
+
+    .loginpage-icon-email-container {
+        position: absolute;
+        margin-top: -60px;
+        margin-right: 230px;
+    }
+
+    .loginpage-icon-password-container {
+        position: absolute;
+        margin-top: 28px;
+        margin-right: 230px;
+    }
+
+    .text-field {
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        width: 271px;
+        padding: 19px 35px;
+    }
+
+    /*modificar*/
+    .logo-google {
+        width: 24px;
+    }
+
+    .logo-user {
+        height: 118px;
+        width: 98px;
+        margin-top: 15px;
+    }
+
+    /* estilos boton registro*/
+    .button-login-orange a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .button-login-orange {
+        background-color: #FF8C32;
+        border-radius: 0.62rem;
+        border-color: transparent;
+        padding: 1rem 2rem;
+        color: white;
+        height: 46px;
+        align-items: center;
+        display: flex;
+        font-family: 'Righteous', cursive;
+        margin: 8px;
+        width: 15rem;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .link-nextpage a {
+        text-decoration: underline;
+        color: var(--color-text);
+        padding: 25px;
+        margin: 15px;
+        font-size: 12px;
+    }
+
+    .line-google {
+        width: 150px;
+        height: 1px;
+        margin: 32px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+    }
+
+    .line-google span {
+        padding-left: 16px;
+        padding-right: 16px;
+        text-transform: uppercase;
+        background-color: var(--color-background-center-box);
+    }
+
+
+    /*Estilos Desktop newsfeed*/
+    .header-nav {
+        position: static;
+    }
+
+    .logos-container {
+        display: flex;
+    }
+
+    .logo {
+        margin-left: 27px;
+        margin-top: 2px;
+        width: 200px;
+        display: block;
+    }
+
+    .logo1 {
+        margin-left: 10px;
+        width: 60px;
+        display: block;
+        border-radius: 50%;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .search,
+    .search-nav {
+        display: flex;
+        font-size: 15px;
+        color: white;
+        margin-right: 34px;
+        cursor: pointer;
+    }
+
+    .search a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-container {
+        display: flex;
+      
+    }
+
+    /*contenido de acesos directos*/
+
+    .profile-container {
+        width: 334px;
+        margin: 18px;
+        line-height: 2rem;
+        border-right: 1px solid;
+    }
+
+    /*contenido publicaciones*/
+    .public-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .direct-access {
+        background-color: var(--color-profile);
+        display: flex;
+        width: 583px;
+        height: 44px;
+        margin: 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 11px;
+    }
+
+    .destacado-option,
+    .home-option,
+    .loultimo-option,
+    .quizzes-option,
+    .recomendaciones-option {
+        background-color: white;
+        padding: 5px 12px;
+        margin: 0 auto;
+        border-radius: 11px;
+        color: #7C0E0E;
+        cursor: pointer;
+    }
+
+    .post-container {
+        width: 713px;
+        height: 150px;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 13px;
+    }
+
+    .post-text {
+        width: 600px;
+        height: 77px;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    .post-comment {
+        margin-top: 1rem;
+        padding: 0.45rem;
+        border-radius: 12px;
+        border: none;
+        background-color: #FF8C32;
+        color: #fff;
+        font-weight: 600;
+        width: 9rem;
+        cursor: pointer;
+    }
+    /*post-pots*/
+    .description-post{
+        background-color: #fff;
+        border-radius: 1.5rem;
+        width: 600px;
+        height: 77px;
+        margin: 5px;
+        padding: 10px;
+    }
+}
